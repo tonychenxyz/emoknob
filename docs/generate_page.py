@@ -65,6 +65,19 @@ html += '<li><strong>Apply Emotion Control:</strong> We apply the extracted emot
 html += '</li>'
 html += '</ol>'
 
+html += '<div style="text-align: center; margin: 20px 0;">'
+html += '<img src="assets/open-ended-method-1.svg" alt="Retrieval-based Emotion Control" style="width: 70%; height: auto;">'
+html += '</div>'
+
+html += '<p class="section-desc">The capability to apply emotion control with few-shot samples allows us to develop systems that apply emotion control based on open-ended text descriptions. We developed two systems:</p>'
+
+html += '<ol class="section-desc" style="list-style-type: decimal; padding-left: 40px; margin-top: -20px;">'
+html += '<li><strong>Retrieval-based Emotion Control:</strong> This system retrieves the most similar emotion from a pre-defined set of samples based on the input text description and transcripts.</li>'
+html += '<li><strong>Synthetic-data-based Emotion Control:</strong> This system uses emotional text to generate emotional speech with existing TTS models and transfer the emotion to emotion control.</li>'
+html += '</ol>'
+
+
+
 
 html += '<h1 class="section-title">Example Clips</h1>'
 html += '<p class="section-desc" style="text-align:center">All of voice clone and voice clone enhaned with emotion control on this page are obtained from cloning this clip.</p>'
