@@ -1,0 +1,13 @@
+librosa
+tqdm
+tiktoken==0.5.1
+audiocraft
+numpy
+ninja
+fastapi
+uvicorn
+tyro
+deepfilternet
+pydub
+gradio
+huggingface_hub
