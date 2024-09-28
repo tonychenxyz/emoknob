@@ -1,0 +1,19 @@
+--extra-index-url https://download.pytorch.org/whl/cu118
+torch
+
+
+transformers==4.33.1
+librosa
+tqdm
+tiktoken==0.5.1
+audiocraft
+numpy<1.25
+ninja
+fastapi
+uvicorn
+tyro
+deepfilternet
+pydub
+soundfile
+huggingface_hub
+pydantic == 1.10.10
