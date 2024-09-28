@@ -31,9 +31,42 @@ neutral_file_selection = {
 }
 
 
-html += '<h1 class="page-title">Audio Samples for <span class="emo-knob-title">🎛️ EmoKnob</span></h1>'
+html += '<h1 class="page-title" style="font-size:40px"><span class="emo-knob-title">🎛️ EmoKnob</span> Enhance Voice Cloning with Fine-Grained Emotion Control</h1>'
+html += '<div class="author-section" style="text-align: center; margin-top: 20px; margin-bottom: 30px;">'
+html += '<p class="authors" style="font-size: 25px; margin-bottom: 15px; text-align: center;"><a href="https://tonychen.xyz/" style="text-decoration: none; color: hsl(204, 86%, 53%) !important;">Haozhe Chen</a>, <a href="https://www.cs.columbia.edu/speech/people.cgi?p=run" style="text-decoration: none; color: hsl(204, 86%, 53%) !important;">Run Chen</a>, and <a href="https://www.cs.columbia.edu/~julia/" style="text-decoration: none; color: hsl(204, 86%, 53%) !important;">Julia Hirschberg</a></p>'
+html += '<p style="font-size: 25px; margin-top: 10px; text-align: center;">Columbia University</p>'
 
-html += '<h1 class="section-title">Source Audio</h1>'
+html += '<div class="button-container" style="display: flex; justify-content: center; gap: 15px;">'
+html += '<a href="#" class="button" style="background-color: #E0FEE4; color: black; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Paper</a>'
+html += '<a href="https://github.com/tonychenxyz/emoknob" class="button" style="background-color: #E0FEE4; color: black; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">GitHub</a>'
+html += '<a href="https://huggingface.co/spaces/tonychenxyz/emo-knob" class="button" style="background-color: #E0FEE4; color: black; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Demo</a>'
+html += '</div>'
+html += '</div>'
+
+html += '<div style="text-align: center; margin: 20px 0;">'
+html += '<img src="assets/emo-knob-teaser-1.svg" alt="EmoKnob Teaser" style="width: 70%; height: auto;">'
+html += '</div>'
+
+
+
+html += '<h1 class="section-title">Abstract</h1>'
+
+html += '<p class="section-desc">While recent advances in Text-to-Speech (TTS) technology produce natural and expressive speech, they lack the option for users to select emotion and control intensity. We propose EmoKnob, a framework that allows fine-grained emotion control in speech synthesis with few-shot demonstrative samples of arbitrary emotion. Our framework leverages the expressive speaker representation space made possible by recent advances in foundation voice cloning models. Based on the few-shot capability of our emotion control framework, we propose two methods to apply emotion control on emotions described by open-ended text, enabling an intuitive interface for controlling a diverse array of nuanced emotions. To facilitate a more systematic emotional speech synthesis field, we introduce a set of evaluation metrics designed to rigorously assess the faithfulness and recognizability of emotion control frameworks. Through objective and subjective evaluations, we show that our emotion control framework effectively embeds emotions into speech and surpasses emotion expressiveness of commercial TTS services.</p>'
+
+html += '<h1 class="section-title">Method</h1>'
+
+html += '<div style="text-align: center; margin: 20px 0;">'
+html += '<img src="assets/method.svg" alt="EmoKnob Method" style="width: 70%; height: auto;">'
+html += '</div>'
+
+html += '<ol class="section-desc" style="list-style-type: decimal; padding-left: 40px;">'
+html += '<li><strong>Emotion Direction Extraction:</strong> We extract an emotion direction vector from a few demonstrative emotional speech samples and their neutral counterparts.</li>'
+html += '<li><strong>Apply Emotion Control:</strong> We apply the extracted emotion direction to a target speech with controllable strength, allowing fine-grained emotion adjustment.</li>'
+html += '</li>'
+html += '</ol>'
+
+
+html += '<h1 class="section-title">Example Clips</h1>'
 html += '<p class="section-desc" style="text-align:center">All of voice clone and voice clone enhaned with emotion control on this page are obtained from cloning this clip.</p>'
 
 html += '<div class="source-audio-play"><span class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5"><path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd"></path></svg></span>'
