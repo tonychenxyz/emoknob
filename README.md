@@ -18,5 +18,9 @@ pip install -r requirements.txt
 
 - View how to use EmoKnob in the [demo notebook](./demo.ipynb).
 
+## Acknowledgement
+
+`EmoKnob` is based on voice cloning backbone of [MetaVoice](https://github.com/metavoiceio/metavoice-src).
+
 ## Citation
 If you find this repository helpful, please consider citing our paper:
