@@ -1,7 +1,21 @@
 html = '''<html><head><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#x1F39B;&#xFE0F;</text></svg>">
+<title>EmoKnob: Enhance Voice Cloning with Fine-Grained Emotion Control</title>
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="styles.css"><script src="scripts.js"></script></head><body>'''
+<link rel="stylesheet" type="text/css" href="styles.css"><script src="scripts.js"></script></head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-THMQKT633M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-THMQKT633M');
+</script>
+
+<body>'''
 
 neutral_file_selection = {
     'original': ['angry_0.0_1_neutraltext0_MSP', 'angry_0.0_1_neutraltext1_MSP', 'angry_0.0_1_neutraltext2_MSP', 'angry_0.0_1_neutraltext3_MSP'],
@@ -31,20 +45,25 @@ neutral_file_selection = {
 }
 
 
-html += '<h1 class="page-title" style="font-size:40px"><span class="emo-knob-title">🎛️ EmoKnob</span> Enhance Voice Cloning with Fine-Grained Emotion Control</h1>'
+html += '<h1 class="page-title" style="font-size:40px"><span class="emo-knob-title">&#x1F39B;&#xFE0F; EmoKnob</span> Enhance Voice Cloning with Fine-Grained Emotion Control</h1>'
 html += '<div class="author-section" style="text-align: center; margin-top: 20px; margin-bottom: 30px;">'
 html += '<p class="authors" style="font-size: 25px; margin-bottom: 15px; text-align: center;"><a href="https://tonychen.xyz/" style="text-decoration: none; color: hsl(204, 86%, 53%) !important;">Haozhe Chen</a>, <a href="https://www.cs.columbia.edu/speech/people.cgi?p=run" style="text-decoration: none; color: hsl(204, 86%, 53%) !important;">Run Chen</a>, and <a href="https://www.cs.columbia.edu/~julia/" style="text-decoration: none; color: hsl(204, 86%, 53%) !important;">Julia Hirschberg</a></p>'
 html += '<p style="font-size: 25px; margin-top: 10px; text-align: center;">Columbia University</p>'
 
 html += '<div class="button-container" style="display: flex; justify-content: center; gap: 15px;">'
-html += '<a href="#" class="button" style="background-color: #E0FEE4; color: black; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Paper</a>'
+html += '<a href="https://arxiv.org/abs/2410.00316" class="button" style="background-color: #E0FEE4; color: black; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Paper</a>'
 html += '<a href="https://github.com/tonychenxyz/emoknob" class="button" style="background-color: #E0FEE4; color: black; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">GitHub</a>'
 html += '<a href="https://huggingface.co/spaces/tonychenxyz/emo-knob" class="button" style="background-color: #E0FEE4; color: black; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Demo</a>'
 html += '</div>'
 html += '</div>'
 
-html += '<div style="text-align: center; margin: 20px 0;">'
-html += '<img src="assets/emo-knob-teaser-1.svg" alt="EmoKnob Teaser" style="width: 70%; height: auto;">'
+html += '<div style="text-align: center; margin: 0px 0;">'
+html += "<video class='teasers' controls>"
+html += '<source src="assets/emoknob-teaser-vid.webm" type="video/webm">'
+html += 'Your browser does not support the video tag.'
+html += '</video>'
+
+html += "<img src='assets/emo-knob-teaser-1.svg' alt='EmoKnob Teaser' class='teasers'>"
 html += '</div>'
 
 
