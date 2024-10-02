@@ -17,3 +17,4 @@ pydub
 soundfile
 huggingface_hub
 pydantic == 1.10.10
+        

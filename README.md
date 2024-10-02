@@ -1,6 +1,8 @@
 # `🎛️ EmoKnob`: EmoKnob: Enhance Voice Cloning with Fine-Grained Emotion Control
 
-This repository contains the code and data for the paper [`EmoKnob`: Enhance Voice Cloning with Fine-Grained Emotion Control]() by [Haozhe Chen](https://tonychen.xyz/), [Run Chen](https://www.cs.columbia.edu/speech/people.cgi?p=run), and [Julia Hirschberg](https://www.cs.columbia.edu/~julia/).
+This repository contains the code and data for the paper [`EmoKnob`: Enhance Voice Cloning with Fine-Grained Emotion Control](https://arxiv.org/abs/2410.00316) by [Haozhe Chen](https://tonychen.xyz/), [Run Chen](https://www.cs.columbia.edu/speech/people.cgi?p=run), and [Julia Hirschberg](https://www.cs.columbia.edu/~julia/).
+
+Check out our [project page](https://emoknob.cs.columbia.edu/) with audio samples and interactive [huggingface demo](https://huggingface.co/spaces/tonychenxyz/emo-knob)!
 
 ![EmoKnob Teaser](./assets/emo-knob-teaser-1.svg)
 
