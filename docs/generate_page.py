@@ -332,7 +332,30 @@ for speaker_idx, speaker in enumerate(speaker_types):
     html += f'<audio src="{audio_paths[speaker_idx]}"></audio>'
     html += '</div>'
 
+
+
+
+
+
+
 html += '</div>'
+
+html += '<h1 class="section-title">Citation</h1>'
+html += '<p class="section-desc">If you find this work useful, please consider citing our paper:</p>'
+html += '<div class="citation-container" style="background-color: #f0f0f0; margin-left: 20%; margin-right: 20%; padding: 20px; border-radius: 10px;">'
+html += '<pre class="citation" style="overflow-x: auto;">'
+html += '@misc{chen2024emoknobenhancevoicecloning,\n'
+html += '      title={EmoKnob: Enhance Voice Cloning with Fine-Grained Emotion Control},\n'
+html += '      author={Haozhe Chen and Run Chen and Julia Hirschberg},\n'
+html += '      year={2024},\n'
+html += '      eprint={2410.00316},\n'
+html += '      archivePrefix={arXiv},\n'
+html += '      primaryClass={cs.CL},\n'
+html += '      url={https://arxiv.org/abs/2410.00316},\n'
+html += '}'
+html += '</pre>'
+html += '</div>'
+
 
 html += '</body></html>'
 with open('index.html', 'w') as f:

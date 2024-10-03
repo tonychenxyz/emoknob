@@ -26,3 +26,15 @@ pip install -r requirements.txt
 
 ## Citation
 If you find this repository helpful, please consider citing our paper:
+
+```
+@misc{chen2024emoknobenhancevoicecloning,
+      title={EmoKnob: Enhance Voice Cloning with Fine-Grained Emotion Control}, 
+      author={Haozhe Chen and Run Chen and Julia Hirschberg},
+      year={2024},
+      eprint={2410.00316},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2410.00316}, 
+}
+```
